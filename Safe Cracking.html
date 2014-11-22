@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+	<script type="text/javascript">
+
+	  // Get single randome number
+		function getRand() {
+			document.write(Math.round(Math.random() * 9));	
+		}
+		
+	  // Get a 6 digit random number sequence
+	  	function getSeq() {
+			for (i = 1; i <= 6; i++) {
+				getRand();
+			}
+		}
+
+	  // Find how many iterations to create
+	  	var intNumCodes = prompt("How many iterations would you like to create?", "Enter a number, 1-10");
+
+	  // Write the 6 digit sequences to a new line
+	  	for (j = 1; j <= intNumCodes; j++) {
+	  		getSeq() + document.write("<br>");
+	  	}
+	</script>
+</body>
+
+</html>
